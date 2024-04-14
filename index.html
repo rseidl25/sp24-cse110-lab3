@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <span>
+        <div>
             <h1>Dallas Cowboys Team Meeting Minutes</h1>
             <h2><u>Wild Card - Packers @ Cowboys</u></h2>
             <img src="media/promo.jpg" alt="promo photo" width="500" height="300">
@@ -21,7 +21,7 @@
                 <br>
                 <strong>Location: </strong> The Star in Frisco
             </p>
-        </span>
+        </div>
         <br>
         <hr>
         <br>
@@ -54,7 +54,7 @@
             </section>
         </div>
         <br>
-        <span class="detail-section">
+        <div class="detail-section">
             <section>
                 <h3><a id="game-details">2. Game Details</a></h3>
                 <ul style="line-height: 2.0;">
@@ -75,12 +75,12 @@
                     </audio>
                 </ul>
             </section>
-        </span>
+        </div>
         <br>
         <div class="offense-section">
             <section>
                 <h3><a id="offensive-plan">3. Offensive Game Plan</a></h3>
-                <p>The following players are included in the offensive scheme we will be discussing today:</p>
+                <span><p>The following players are included in the offensive scheme we will be discussing today:</p></span>
                 <details>
                     <summary>Starting Offense Roster</summary>
                     <ul style="line-height: 2.0;">
@@ -107,10 +107,10 @@
             </section>
         </div>
         <br>
-        <span class="defense-section">
+        <div class="defense-section">
             <section>
                 <h3><a id="defensive-plan">4. Defensive Game Plan</a></h3>
-                <p>The following players are included in the defensive scheme we will be discussing today:</p>
+                <span><p>The following players are included in the defensive scheme we will be discussing today:</p></span>
                 <details>
                     <summary>Starting Defense Roster</summary>
                     <ul style="line-height: 2.0;">
@@ -135,12 +135,12 @@
                     <li><strong>Stay disciplined on the line.</strong> <p>We cannot give up yardage through penalties. Watch the ball and stay disciplined.</p></li>
                 </ol>
             </section>
-        </span>
+        </div>
         <br>
         <div class="special-teams-section">
             <section>
                 <h3><a id="special-teams-plan">5. Special Teams Game Plan</a></h3>
-                <p>The following players are included in the special teams scheme we will be discussing today:</p>
+                <span><p>The following players are included in the special teams scheme we will be discussing today:</p></span>
                 <details>
                     <summary>Starting Special Teams Roster</summary>
                     <ul style="line-height: 2.0;">
@@ -161,7 +161,7 @@
             </section>
         </div>
         <br>
-        <span class="team-captains-section">
+        <div class="team-captains-section">
             <section>
                 <h3><a id="team-captains">6. Team Captains</a></h3>
                 <ol style="line-height: 2.0;">
@@ -169,9 +169,9 @@
                     <li>CeeDee Lamb</li>
                     <li>Micah Parsons</li>
                 </ol>
-                <p><strong>Let's send those trash Packers to Cancún! <em>We dem boys!</em></strong></p>
+                <span><p><strong>Let's send those trash Packers to Cancún! <em>We dem boys!</em></strong></p></span>
             </section>
-        </span>
+        </div>
         <br>
     </main>
     <hr> <br>
@@ -179,7 +179,7 @@
         <h3>Test Form</h3>
         <form>
             <fieldset>
-                <p><label for="best-wide-receiver">Select the best wide receiver out of the following list:</label></p>
+                <span><p><label for="rad-wr1">Select the best wide receiver out of the following list:</label></p></span>
                 <input type="radio" id="rad-wr1" name="receiver" value="CeeDee Lamb">
                 <label for="rad-wr1">CeeDee Lamb</label><br>
                 <input type="radio" id="rad-wr2" name="receiver" value="Tyreek Hill">
@@ -191,7 +191,7 @@
                 <input type="radio" id="rad-wr5" name="receiver" value="Ja'Marr Chase">
                 <label for="rad-wr5">Ja'Marr Chase</label><br><br>
 
-                <p><label for="starting-receivers">Choose three wide receivers you'd want on your team:</label></p>
+                <span><p><label for="chk-wr1">Choose three wide receivers you'd want on your team:</label></p></span>
                 <input type="checkbox" id="chk-wr1" name="receiver" value="CeeDee Lamb">
                 <label for="chk-wr1">CeeDee Lamb</label><br>
                 <input type="checkbox" id="chk-wr2" name="receiver" value="Tyreek Hill">
@@ -203,10 +203,10 @@
                 <input type="checkbox" id="chk-wr5" name="receiver" value="Ja'Marr Chase">
                 <label for="chk-wr5">Ja'Marr Chase</label><br><br>
 
-                <p><label for="additional-receiver">Write one additional wide receiver you'd want on your team:</label></p>
+                <span><p><label for="txt-wr">Write one additional wide receiver you'd want on your team:</label></p></span>
                 <input type="text" id="txt-wr" name="receiver"><br><br>
 
-                <p><label for="choose-pos-off">What is the most important position on offense?</label></p>
+                <span><p><label for="o-position">What is the most important position on offense?</label></p></span>
                 <input list="off-pos" name="o-position" id="o-position">
 
                 <datalist id="off-pos">
@@ -217,7 +217,7 @@
                     <option value="Oline">
                 </datalist><br><br>
 
-                <p><label for="choose-pos-def">What is the most important position on defense?</label></p>
+                <span><p><label for="def-pos">What is the most important position on defense?</label></p></span>
                 <select id="def-pos">
                     <option value="LB">LB</option>
                     <option value="SS">SS</option>
@@ -226,11 +226,11 @@
                     <option value="Dline">Dline</option>
                 </select><br><br>
 
-                <p><label for="favorite-team">Write your favorite NFL team below:</label></p>
+                <p><label for="team-response">Write your favorite NFL team below:</label></p>
                 <textarea id="team-response" rows="3" cols="20"></textarea>
                 <br><br>
 
-                <p><label for="date">Input today's date:</label></p>
+                <span><p><label for="today-date">Input today's date:</label></p></span>
                 <input type="date" id="today-date"><br><br>
 
                 <button type="button">Submit Answers</button>
