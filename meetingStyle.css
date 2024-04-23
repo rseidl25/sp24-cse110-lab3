@@ -1,1 +1,27 @@
+.header-container {
+    border-style: solid;
+    background-color: #89979a;
+}
 
+.header-text{
+    position: absolute;
+    top: 0; left: 33%;
+}
+
+#promo-image{
+    position: relative;
+    top: 120px; left: 20%;
+    border-style: solid;
+    border-color: #083061;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #083061;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
