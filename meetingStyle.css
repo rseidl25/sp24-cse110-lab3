@@ -1,57 +1,129 @@
 /* body styling */
 body{
-    background-color: #ffffff;
+    background-color: #083061;
 }
 
 /* header styling */
 .header-container {
-    border-style: solid;
-    border-color: black;
+    border-style: double;
+    border-color: white;
+    border-width: 10px;
     background-color: #939ca2;
     border-radius: 20px;
+
+    min-width: 30px;
+    padding-top: 3vh;
+    margin: 5vh 20vw 5vh 20vw;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 #promo-image{
     position: relative;
-    top: 120px; left: 20%;
+    top: 1vh; left: 11.5vw;
+    width: 60%;
+    height: auto;
     border-style: solid;
-    border-color: #083061;
+    border-color: color(display-p3 100 48 97);
+    border-radius: 10px;
+}
+
+#details-list{
+    display: flex;
+    justify-content: center;
+}
+
+#details-list-entry{
+    display: block;
+    padding: 3vh;
+    font-size: 20px;
+    justify-content: center;
 }
 
 h1{
+    --cowboys-blue: #083061;
+}
+
+h1:has(+ h2) {
     display: flex;
     justify-content: center;
-    color: #083061;
+    color: var(--cowboys-blue, rgba(8, 48, 97, 100));
+    font-size: 45px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2{
     display: flex;
     justify-content: center;
+    color: color-mix(in srgb, rgb(8, 48, 97) 5%, white 90%);
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline overline hsl(226, 73%, 29%);
 }
 
 h3{
     display: flex;
     justify-content: center;
-}
+    color: #083061;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
 
 /* agenda styling */
 .agenda-container{
-    border-style: dotted;
-    border-color: #0921e5;
-    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
     border-radius: 50px;
     background-color: #939ca2;
-    padding-top: 20px; padding-bottom: 20px;
+
+    padding-top: 4vh; padding-bottom: 4vh;
+    margin-left: 20vw; margin-right: 20vw;
+    margin-bottom: 5vh;
+
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
-#agenda-list-entry{
+*#agenda-list-entry{
     display: inline;
     padding: 4px;
+}
+
+a[href]{
+
+    color:#083061;
+
+    &:hover{
+        color: red;
+    }
+
+    &:active{
+        color: green;
+    }
+    
 }
 
 #agenda-text{
     display: flex;
     justify-content: center;
+    color: #083061;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 /* main top row styling */
@@ -67,13 +139,22 @@ h3{
 .coaching-section,
 .detail-section,
 .team-captains-section{
-    border-style: solid;
-    border-radius: 10px;
+    border-style: double;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: #939ca2;
+
     width: fit-content;
     height: fit-content;
     padding-left: 15px; padding-right: 15px;
     padding-top: 0px; padding-bottom: 10px;
     margin: auto;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
     
 }
 
@@ -112,8 +193,12 @@ h3{
 .offense-section,
 .defense-section,
 .special-teams-section{
-    border-style: solid;
-    border-radius: 10px;
+    border-style: double;
+    border-color: white;
+    border-radius: 20px;
+    border-width: 10px;
+    background-color: #939ca2;
+
     width: fit-content;
     max-width: 20%;
     height: fit-content;
@@ -121,16 +206,107 @@ h3{
     padding: 0px 15px 10px 15px;        /* margin shorthand: <top> <right> <bottom> <left> */
     margin: 10px 40px 10px 40px;         /* padding shorthand: <top> <right> <bottom> <left> */
     
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    
 }
 
 /* form container styling */
 .form-container{
     border-style: solid;
-    border-radius: 10px;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: #939ca2;
+
     width: fit-content;
     padding-left: 15px; padding-right: 15px;
     padding-top: 0px; padding-bottom: 10px;
     margin-left: 10px; margin-right: 10px;
     margin-top: 10px; margin-bottom: 0px;
     
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    
+}
+
+.form-container p{
+    color: #083061;
+}
+
+.form-container > form{
+    background-color: aliceblue;
+}
+
+details + p{
+    color:red;
+}
+
+h3 ~ p{
+    text-decoration: underline;
+}
+
+ul#offense-roster-container,
+ul#defense-roster-container,
+ul#spteams-roster-container{
+    color:#083061
+}
+
+/* Add media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+    /* Adjust header container */
+    .header-container {
+        margin: 5vh 5vw;
+    }
+
+    /* Adjust agenda container */
+    .agenda-container {
+        margin: 5vh 5vw;
+    }
+
+    /* Adjust main top row grid layout */
+    .main-top-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Adjust main bottom row container width */
+    .offense-section,
+    .defense-section,
+    .special-teams-section {
+        max-width: 100%;
+    }
+
+    /* Adjust form container width */
+    .form-container {
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust header container */
+    .header-container {
+        margin: 5vh 10vw;
+    }
+
+    /* Adjust agenda container */
+    .agenda-container {
+        margin: 5vh 10vw;
+    }
+
+    /* Adjust main bottom row container width */
+    .offense-section,
+    .defense-section,
+    .special-teams-section {
+        max-width: 40%;
+    }
+
+    /* Adjust form container width */
+    .form-container {
+        margin: 10px 20vw;
+    }
 }

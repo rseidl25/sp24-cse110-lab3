@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="media/cowboysLogo.png">
     <link rel="stylesheet" href="meetingStyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
     <title>Dallas Cowboys Team Meeting</title>
 </head>
 <body>
@@ -12,21 +15,15 @@
         <div class="header-container">
             <div class="header-text">
                 <h1>Dallas Cowboys Team Meeting Minutes</h1>
-                <h2><u>Wild Card - Packers @ Cowboys</u></h2>
+                <h2>Wild Card - Packers @ Cowboys</h2>
             </div>
             <img src="media/promo.jpg" alt="promo photo" id="promo-image" width="500" height="300">
-            <p id="details-text">
-                <strong>Meeting Details:</strong>
-                <br> <br>
-                <strong>Date: </strong> January 12, 2024
-                <br>
-                <strong>Time: </strong> 11:00am
-                <br>
-                <strong>Location: </strong> The Star in Frisco
-            </p>
+            <ul id="details-list" style="line-height: 2.0;">
+                <li id="details-list-entry"><span><strong>Date:</strong> January 12, 2024</span></li>
+                <li id="details-list-entry"><span><strong>Time:</strong> 3:00 PM</span></li>
+                <li id="details-list-entry"><span><strong>Location:</strong> The Star at Frisco</span></li>
+            </ul>
         </div>
-        <br>
-        <hr>
         <br>
         <div class="agenda-container">
             <span id="agenda-text"><i><b>Meeting Agenda</b></i></span>
@@ -42,7 +39,7 @@
             </nav>
         </div>
     </header>
-    <br><hr><br>
+    <br>
     <main>
         <div class="main-top-row">
             <div class="coaching-section">
@@ -186,68 +183,70 @@
     </main>
 
     <footer>
-        <div class="form-container">
-            <h3>Test Form</h3>
-            <form id="test-frm">
-                <fieldset id="fieldset-container">
-                    <p><label id="rad-lbl" for="rad-wr1">Select the best wide receiver out of the following list:</label></p>
-                    <input type="radio" id="rad-wr1" name="receiver" value="CeeDee Lamb">
-                    <label for="rad-wr1">CeeDee Lamb</label><br>
-                    <input type="radio" id="rad-wr2" name="receiver" value="Tyreek Hill">
-                    <label for="rad-wr2">Tyreek Hill</label><br>
-                    <input type="radio" id="rad-wr3" name="receiver" value="AJ Brown">
-                    <label for="rad-wr3">AJ Brown</label><br>
-                    <input type="radio" id="rad-wr4" name="receiver" value="Justin Jefferson">
-                    <label for="rad-wr4">Justin Jefferson</label><br>
-                    <input type="radio" id="rad-wr5" name="receiver" value="Ja'Marr Chase">
-                    <label for="rad-wr5">Ja'Marr Chase</label><br><br>
+        <center>
+            <div class="form-container">
+                <h3>Test Form</h3>
+                <form id="test-frm">
+                    <fieldset id="fieldset-container">
+                        <p><label id="rad-lbl" for="rad-wr1">Select the best wide receiver out of the following list:</label></p>
+                        <input type="radio" id="rad-wr1" name="receiver" value="CeeDee Lamb">
+                        <label for="rad-wr1">CeeDee Lamb</label><br>
+                        <input type="radio" id="rad-wr2" name="receiver" value="Tyreek Hill">
+                        <label for="rad-wr2">Tyreek Hill</label><br>
+                        <input type="radio" id="rad-wr3" name="receiver" value="AJ Brown">
+                        <label for="rad-wr3">AJ Brown</label><br>
+                        <input type="radio" id="rad-wr4" name="receiver" value="Justin Jefferson">
+                        <label for="rad-wr4">Justin Jefferson</label><br>
+                        <input type="radio" id="rad-wr5" name="receiver" value="Ja'Marr Chase">
+                        <label for="rad-wr5">Ja'Marr Chase</label><br><br>
 
-                    <p><label id="chk-lbl" for="chk-wr1">Choose three wide receivers you'd want on your team:</label></p>
-                    <input type="checkbox" id="chk-wr1" name="receiver" value="CeeDee Lamb">
-                    <label for="chk-wr1">CeeDee Lamb</label><br>
-                    <input type="checkbox" id="chk-wr2" name="receiver" value="Tyreek Hill">
-                    <label for="chk-wr2">Tyreek Hill</label><br>
-                    <input type="checkbox" id="chk-wr3" name="receiver" value="AJ Brown">
-                    <label for="chk-wr3">AJ Brown</label><br>
-                    <input type="checkbox" id="chk-wr4" name="receiver" value="Justin Jefferson">
-                    <label for="chk-wr4">Justin Jefferson</label><br>
-                    <input type="checkbox" id="chk-wr5" name="receiver" value="Ja'Marr Chase">
-                    <label for="chk-wr5">Ja'Marr Chase</label><br><br>
+                        <p><label id="chk-lbl" for="chk-wr1">Choose three wide receivers you'd want on your team:</label></p>
+                        <input type="checkbox" id="chk-wr1" name="receiver" value="CeeDee Lamb">
+                        <label for="chk-wr1">CeeDee Lamb</label><br>
+                        <input type="checkbox" id="chk-wr2" name="receiver" value="Tyreek Hill">
+                        <label for="chk-wr2">Tyreek Hill</label><br>
+                        <input type="checkbox" id="chk-wr3" name="receiver" value="AJ Brown">
+                        <label for="chk-wr3">AJ Brown</label><br>
+                        <input type="checkbox" id="chk-wr4" name="receiver" value="Justin Jefferson">
+                        <label for="chk-wr4">Justin Jefferson</label><br>
+                        <input type="checkbox" id="chk-wr5" name="receiver" value="Ja'Marr Chase">
+                        <label for="chk-wr5">Ja'Marr Chase</label><br><br>
 
-                    <p><label id="txt-lbl" for="txt-wr">Write one additional wide receiver you'd want on your team:</label></p>
-                    <input type="text" id="txt-wr" name="receiver"><br><br>
+                        <p><label id="txt-lbl" for="txt-wr">Write one additional wide receiver you'd want on your team:</label></p>
+                        <input type="text" id="txt-wr" name="receiver"><br><br>
 
-                    <p><label id="list-lbl" for="o-position">What is the most important position on offense?</label></p>
-                    <input list="off-pos" name="o-position" id="o-position">
+                        <p><label id="list-lbl" for="o-position">What is the most important position on offense?</label></p>
+                        <input list="off-pos" name="o-position" id="o-position">
 
-                    <datalist id="off-pos">
-                        <option value="QB">
-                        <option value="RB">
-                        <option value="WR">
-                        <option value="TE">
-                        <option value="Oline">
-                    </datalist><br><br>
+                        <datalist id="off-pos">
+                            <option value="QB">
+                            <option value="RB">
+                            <option value="WR">
+                            <option value="TE">
+                            <option value="Oline">
+                        </datalist><br><br>
 
-                    <p><label id="sel-lbl" for="def-pos">What is the most important position on defense?</label></p>
-                    <select id="def-pos">
-                        <option value="LB">LB</option>
-                        <option value="SS">SS</option>
-                        <option value="FS">FS</option>
-                        <option value="CB">CB</option>
-                        <option value="Dline">Dline</option>
-                    </select><br><br>
+                        <p><label id="sel-lbl" for="def-pos">What is the most important position on defense?</label></p>
+                        <select id="def-pos">
+                            <option value="LB">LB</option>
+                            <option value="SS">SS</option>
+                            <option value="FS">FS</option>
+                            <option value="CB">CB</option>
+                            <option value="Dline">Dline</option>
+                        </select><br><br>
 
-                    <p><label id="txtar-lbl" for="team-response">Write your favorite NFL team below:</label></p>
-                    <textarea id="team-response" rows="3" cols="20"></textarea>
-                    <br><br>
+                        <p><label id="txtar-lbl" for="team-response">Write your favorite NFL team below:</label></p>
+                        <textarea id="team-response" rows="3" cols="20"></textarea>
+                        <br><br>
 
-                    <p><label id="date-lbl" for="today-date">Input today's date:</label></p>
-                    <input type="date" id="today-date"><br><br>
+                        <p><label id="date-lbl" for="today-date">Input today's date:</label></p>
+                        <input type="date" id="today-date"><br><br>
 
-                    <button id="btn-lbl" type="button">Submit Answers</button>
-                </fieldset>
-            </form>
-        </div>
+                        <button id="btn-lbl" type="button">Submit Answers</button>
+                    </fieldset>
+                </form>
+            </div>
+        </center>
     </footer>
 </body>
 </html>
