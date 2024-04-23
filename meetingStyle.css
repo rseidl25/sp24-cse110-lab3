@@ -1,11 +1,14 @@
-.header-container {
-    border-style: solid;
-    background-color: #89979a;
+/* body styling */
+body{
+    background-color: #ffffff;
 }
 
-.header-text{
-    position: absolute;
-    top: 0; left: 33%;
+/* header styling */
+.header-container {
+    border-style: solid;
+    border-color: black;
+    background-color: #939ca2;
+    border-radius: 20px;
 }
 
 #promo-image{
@@ -24,4 +27,119 @@ h1{
 h2{
     display: flex;
     justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+/* agenda styling */
+.agenda-container{
+    border-style: dotted;
+    border-color: #0921e5;
+    border-width: 3px;
+    border-radius: 50px;
+    background-color: #939ca2;
+    padding-top: 20px; padding-bottom: 20px;
+}
+
+#agenda-list-entry{
+    display: inline;
+    padding: 4px;
+}
+
+#agenda-text{
+    display: flex;
+    justify-content: center;
+}
+
+/* coaching container styling */
+.coaching-section{
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    width: 48%;
+    padding-left: 15px; padding-right: 15px;
+    padding-top: 0px; padding-bottom: 10px;
+    margin: auto;
+    
+}
+
+#mike-image{
+    border-style: solid;
+    width: 425px;
+}
+
+/* detail container styling */
+.detail-section{
+    float: right;
+    border-style: solid;
+    border-radius: 10px;
+    width: 48%;
+    padding-left: 15px; padding-right: 15px;
+    padding-top: 0px; padding-bottom: 10px;
+    margin: auto;
+    
+}
+
+/* offense container styling */
+.offense-section{
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    width: 48%;
+    padding-left: 15px; padding-right: 15px;
+    padding-top: 0px; padding-bottom: 10px;
+    margin-left: 10px; margin-right: 10px;
+    margin-top: 10px; margin-bottom: 0px;
+    
+}
+
+/* defense container styling */
+.defense-section{
+    float: right;
+    border-style: solid;
+    border-radius: 10px;
+    width: 48%;
+    padding: 0px 15px 10px 15px;        /* margin shorthand: <top> <right> <bottom> <left> */
+    margin: 10px 10px 0px 10px;         /* padding shorthand: <top> <right> <bottom> <left> */
+    
+}
+
+/* special teams container styling */
+.special-teams-section{
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    width: 48%;
+    padding-left: 15px; padding-right: 15px;
+    padding-top: 0px; padding-bottom: 10px;
+    margin-left: 10px; margin-right: 10px;
+    margin-top: 10px; margin-bottom: 0px;
+    
+}
+
+/* team captains container styling */
+.team-captains-section{
+    float: right;
+    border-style: solid;
+    border-radius: 10px;
+    width: 48%;
+    padding: 0px 15px 10px 15px;        /* margin shorthand: <top> <right> <bottom> <left> */
+    margin: 10px 10px 0px 10px;         /* padding shorthand: <top> <right> <bottom> <left> */
+    
+}
+
+/* footer styling */
+footer{
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    width: 48%;
+    padding-left: 15px; padding-right: 15px;
+    padding-top: 0px; padding-bottom: 10px;
+    margin-left: 10px; margin-right: 10px;
+    margin-top: 10px; margin-bottom: 0px;
+    
 }
