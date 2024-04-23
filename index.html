@@ -34,214 +34,220 @@
                 <ol style="line-height: 1.5;">
                     <li id="agenda-list-entry"><a href="#coaching-staff">Coaching Staff Present</a></li>
                     <li id="agenda-list-entry"><a href="#game-details">Game Details</a></li>
+                    <li id="agenda-list-entry"><a href="#team-captains">Team Captains</a></li>
                     <li id="agenda-list-entry"><a href="#offensive-plan">Offensive Game Plan</a></li>
                     <li id="agenda-list-entry"><a href="#defensive-plan">Defensive Game Plan</a></li>
                     <li id="agenda-list-entry"><a href="#special-teams-plan">Special Teams Game Plan</a></li>
-                    <li id="agenda-list-entry"><a href="#team-captains">Team Captains</a></li>
                 </ol>
             </nav>
         </div>
     </header>
     <br><hr><br>
     <main>
-        <div class="coaching-section">
-            <section>
-                <h3><a id="coaching-staff">Coaching Staff Present</a></h3>
-                <div id="coach-list-container">
-                    <ul style="line-height: 2.0;">
-                        <li><span>Mike McCarthy - <em><b>Head Coach</b></em></span></li>
-                        <li><span>Brian Schottenheimer - <em>Offensive Coordinator</em></span></li>
-                        <li><span>Dan Quinn - <em>Defensive Coordinator</em></span></li>
-                        <li><span>John Fassel - <em>Special Teams Coordinator</em></span></li>
+        <div class="main-top-row">
+            <div class="coaching-section">
+                <section>
+                    <h3><a id="coaching-staff">Coaching Staff Present</a></h3>
+                    <div id="coach-list-container">
+                        <ul style="line-height: 2.0;">
+                            <li><span>Mike McCarthy - <em><b>Head Coach</b></em></span></li>
+                            <li><span>Brian Schottenheimer - <em>Offensive Coordinator</em></span></li>
+                            <li><span>Dan Quinn - <em>Defensive Coordinator</em></span></li>
+                            <li><span>John Fassel - <em>Special Teams Coordinator</em></span></li>
+                        </ul>
+                        <img src="media/mike.jpg" alt="glorius mike" id="mike-image" width="480" height="300">
+                    </div>
+                </section>
+            </div>
+
+            <div class="detail-section">
+                <section>
+                    <h3><a id="game-details">Game Details</a></h3>
+                    <ul id="detail-list-container" style="line-height: 2.0;">
+                        <li><span><strong>Date: </strong> Sunday, January 14, 2024</span></li>
+                        <li><span><strong>Time: </strong> 3:30pm</span></li>
+                        <li> ***<b>PLAYERS:</b> arrive at stadium 3 hours before game time!!</li>
+                        <li><span><strong>Projected Forecast: </strong> Does not matter; stadium has a roof</span></li>
+                        <li><span><strong>Matchup: </strong> Green Bay Packers <em>(+271)</em> @ Dallas Cowboys <em>(-343)</em></span></li>
                     </ul>
-                    <img src="media/mike.jpg" alt="glorius mike" id="mike-image" width="480" height="300">
-                </div>
-            </section>
+                    <p id="preview-label-text"><strong>Matchup Preview:</strong></p>
+                    <video id="video-container" width="400" height="240" controls>
+                        <source src="media/gamePreview.mp4" type="video/mp4">
+                        <span>Your browser does not support the video tag.</span>
+                    </video>
+                    <p id="alt-label-text">Alternatively, listen to the audio from the game preview here: </p>
+                    <audio id="audio-container" controls>
+                        <source src="media/gamePreview_audio.mp3" type="audio/mp3">
+                        <span>Your browser does not support the audio tag.</span>
+                    </audio>
+                </section>
+            </div>
+
+            <div class="team-captains-section">
+                <section>
+                    <h3><a id="team-captains">Team Captains</a></h3>
+                    <ol id="teamcaps-list" style="line-height: 2.0;">
+                        <li>Dak Prescott</li>
+                        <li>CeeDee Lamb</li>
+                        <li>Micah Parsons</li>
+                    </ol>
+                    <img src="media/dak.jpg" alt="glorius dak" id="dak-image" width="480" height="310">
+                    <p id="trash-talk-text"><strong>Let's send those trash Packers to Cancún! <em>We dem boys!</em></strong></p>
+                </section>
+            </div>
         </div>
 
-        <div class="detail-section">
-            <section>
-                <h3><a id="game-details">Game Details</a></h3>
-                <ul id="detail-list-container" style="line-height: 2.0;">
-                    <li><span><strong>Date: </strong> Sunday, January 14, 2024</span></li>
-                    <li><span><strong>Time: </strong> 3:30pm</span></li>
-                    <li> ***<b>PLAYERS:</b> arrive at stadium 3 hours before game time!!</li>
-                    <li><span><strong>Projected Forecast: </strong> Does not matter; stadium has a roof</span></li>
-                    <li><span><strong>Matchup: </strong> Green Bay Packers <em>(+271)</em> @ Dallas Cowboys <em>(-343)</em></span></li>
-                </ul>
-                <br>
-                <p id="preview-label-text"><strong>Matchup Preview:</strong></p>
-                <video id="video-container" width="400" height="240" controls>
-                    <source src="media/gamePreview.mp4" type="video/mp4">
-                    <span>Your browser does not support the video tag.</span>
-                </video>
-                <p id="alt-label-text">Alternatively, listen to the audio from the game preview here: </p>
-                <audio id="audio-container" controls>
-                    <source src="media/gamePreview_audio.mp3" type="audio/mp3">
-                    <span>Your browser does not support the audio tag.</span>
-                </audio>
-            </section>
+        <div class="main-bottom-row">
+            <div class="offense-section">
+                <section>
+                    <h3><a id="offensive-plan">Offensive Game Plan</a></h3>
+                    <p id="offense-roster-text">The following players are included in the offensive scheme we will be discussing today:</p>
+                    <details>
+                        <summary>Starting Offense Roster</summary>
+                        <ul id="offense-roster-container" style="line-height: 2.0;">
+                            <li>QB: Dak Prescott</li>
+                            <li>RB: Tony Pollard</li>
+                            <li>WR1: CeeDee Lamb</li>
+                            <li>WR2: Brandin Cooks</li>
+                            <li>WR3: Michael Gallup</li>
+                            <li>TE: Jake Ferguson</li>
+                            <li>C: Brock Hoffman</li>
+                            <li>G: Zack Martin</li>
+                            <li>G: T.J. Bass</li>
+                            <li>OT: Tyler Smith</li>
+                            <li>OT: Terence Steele</li>
+                        </ul>
+                    </details>
+                    <p id="offense-plan-text">To win the game on offense, we must accomplish the following:</p>
+                    <ol id="offense-plan-list" style="line-height: 2.0;">
+                        <li><strong>Protect the football.</strong> <p>We cannot have any turnovers on offense whether it be a fumble or an interception.</p></li>
+                        <li><strong>Don't play conservatively.</strong> <p>We have to come out firing on offense. To win this game, we must take an early lead and hold onto it for the rest of the game.</p></li>
+                        <li><strong>Feed CeeDee Lamb.</strong> <p>CeeDee has been too dominant this season to not give him the ball in this game. We should rely on him as a downfield threat.</p></li>
+                        <li><strong>Get the run game going early.</strong> <p>Pollard and Dowdle must step up in the run game. We must be a threat on the ground and in the air if we want to win.</p></li>
+                    </ol>
+                </section>
+            </div>
+
+            <div class="defense-section">
+                <section>
+                    <h3><a id="defensive-plan">Defensive Game Plan</a></h3>
+                    <p id="defense-roster-text">The following players are included in the defensive scheme we will be discussing today:</p>
+                    <details>
+                        <summary>Starting Defense Roster</summary>
+                        <ul id="defense-roster-container" style="line-height: 2.0;">
+                            <li>LDE: DeMarcus Lawrence</li>
+                            <li>LDT: Chauncey Golston</li>
+                            <li>RDT: Osa Odighizuwa</li>
+                            <li>RDE: Micah Parsons</li>
+                            <li>WLB: Damone Clark</li>
+                            <li>MLB: Markquese Bell</li>
+                            <li>SLB: DeMarvion Overshown</li>
+                            <li>LCB: DaRon Bland</li>
+                            <li>SS: Donovan Wilson</li>
+                            <li>FF: Malik Hooker</li>
+                            <li>RCB: C.J. Goodwin</li>
+                        </ul>
+                    </details>
+                    <p id="defense-plan-text">To win the game on defense, we must accomplish the following:</p>
+                    <ol id="defense-plan-list" style="line-height: 2.0;">
+                        <li><strong>Force turnovers.</strong> <p>We need to hold the ball as much as possible in this game. That means punching the ball out of the runner's hands and jumping routes for picks.</p></li>
+                        <li><strong>Stop Aaron Jones.</strong> <p>Everyone knows how much of a threat Jones is once he gets going. We need to shut down Jones and the run game immediately.</p></li>
+                        <li><strong>Pressure the QB.</strong> <p>Jordan Love is only a true threat if he's comfortable in the pocket. Our D line and edge rushers must put as much pressure on Love as possible.</p></li>
+                        <li><strong>Stay disciplined on the line.</strong> <p>We cannot give up yardage through penalties. Watch the ball and stay disciplined.</p></li>
+                    </ol>
+                </section>
+            </div>
+
+            <div class="special-teams-section">
+                <section>
+                    <h3><a id="special-teams-plan">Special Teams Game Plan</a></h3>
+                    <p id="spteams-roster-text">The following players are included in the special teams scheme we will be discussing today:</p>
+                    <details>
+                        <summary>Starting Special Teams Roster</summary>
+                        <ul id="spteams-roster-container" style="line-height: 2.0;">
+                            <li>PK: Brandon Aubrey</li>
+                            <li>P: Bryan Anger</li>
+                            <li>H: Bryan Anger</li>
+                            <li>PR: KaVontae Turpin</li>
+                            <li>KR: KaVontae Turpin</li>
+                            <li>LS: Trent Sieg</li>
+                        </ul>
+                    </details>
+                    <p id="spteams-plan-text">To win the game on special teams, we must accomplish the following:</p>
+                    <ol id="spteams-plan-list" style="line-height: 2.0;">
+                        <li><strong>Protect the kicker.</strong> <p>If we allow any of our kicks or punts to be blocked, we will lose the game. Plain and simple.</p></li>
+                        <li><strong>Trick plays.</strong> <p>Depending on the situation, we may elect to fake a punt on 4th down. Be ready for this call in the game.</p></li>
+                        <li><strong>Kick return TDs.</strong> <p>During kick returns, continue blocking your man until you hear a whistle. Special teams TDs will win us the game.</p></li>
+                    </ol>
+                </section>
+            </div>
         </div>
 
-        <div class="offense-section">
-            <section>
-                <h3><a id="offensive-plan">Offensive Game Plan</a></h3>
-                <p id="offense-roster-text">The following players are included in the offensive scheme we will be discussing today:</p>
-                <details>
-                    <summary>Starting Offense Roster</summary>
-                    <ul id="offense-roster-container" style="line-height: 2.0;">
-                        <li>QB: Dak Prescott</li>
-                        <li>RB: Tony Pollard</li>
-                        <li>WR1: CeeDee Lamb</li>
-                        <li>WR2: Brandin Cooks</li>
-                        <li>WR3: Michael Gallup</li>
-                        <li>TE: Jake Ferguson</li>
-                        <li>C: Brock Hoffman</li>
-                        <li>G: Zack Martin</li>
-                        <li>G: T.J. Bass</li>
-                        <li>OT: Tyler Smith</li>
-                        <li>OT: Terence Steele</li>
-                    </ul>
-                </details>
-                <p id="offense-plan-text">To win the game on offense, we must accomplish the following:</p>
-                <ol id="offense-plan-list" style="line-height: 2.0;">
-                    <li><strong>Protect the football.</strong> <p>We cannot have any turnovers on offense whether it be a fumble or an interception.</p></li>
-                    <li><strong>Don't play conservatively.</strong> <p>We have to come out firing on offense. To win this game, we must take an early lead and hold onto it for the rest of the game.</p></li>
-                    <li><strong>Feed CeeDee Lamb.</strong> <p>CeeDee has been too dominant this season to not give him the ball in this game. We should rely on him as a downfield threat.</p></li>
-                    <li><strong>Get the run game going early.</strong> <p>Pollard and Dowdle must step up in the run game. We must be a threat on the ground and in the air if we want to win.</p></li>
-                </ol>
-            </section>
-        </div>
-
-        <div class="defense-section">
-            <section>
-                <h3><a id="defensive-plan">Defensive Game Plan</a></h3>
-                <p id="defense-roster-text">The following players are included in the defensive scheme we will be discussing today:</p>
-                <details>
-                    <summary>Starting Defense Roster</summary>
-                    <ul id="defense-roster-container" style="line-height: 2.0;">
-                        <li>LDE: DeMarcus Lawrence</li>
-                        <li>LDT: Chauncey Golston</li>
-                        <li>RDT: Osa Odighizuwa</li>
-                        <li>RDE: Micah Parsons</li>
-                        <li>WLB: Damone Clark</li>
-                        <li>MLB: Markquese Bell</li>
-                        <li>SLB: DeMarvion Overshown</li>
-                        <li>LCB: DaRon Bland</li>
-                        <li>SS: Donovan Wilson</li>
-                        <li>FF: Malik Hooker</li>
-                        <li>RCB: C.J. Goodwin</li>
-                    </ul>
-                </details>
-                <p id="defense-plan-text">To win the game on defense, we must accomplish the following:</p>
-                <ol id="defense-plan-list" style="line-height: 2.0;">
-                    <li><strong>Force turnovers.</strong> <p>We need to hold the ball as much as possible in this game. That means punching the ball out of the runner's hands and jumping routes for picks.</p></li>
-                    <li><strong>Stop Aaron Jones.</strong> <p>Everyone knows how much of a threat Jones is once he gets going. We need to shut down Jones and the run game immediately.</p></li>
-                    <li><strong>Pressure the QB.</strong> <p>Jordan Love is only a true threat if he's comfortable in the pocket. Our D line and edge rushers must put as much pressure on Love as possible.</p></li>
-                    <li><strong>Stay disciplined on the line.</strong> <p>We cannot give up yardage through penalties. Watch the ball and stay disciplined.</p></li>
-                </ol>
-            </section>
-        </div>
-
-        <div class="special-teams-section">
-            <section>
-                <h3><a id="special-teams-plan">Special Teams Game Plan</a></h3>
-                <p id="spteams-roster-text">The following players are included in the special teams scheme we will be discussing today:</p>
-                <details>
-                    <summary>Starting Special Teams Roster</summary>
-                    <ul id="spteams-roster-container" style="line-height: 2.0;">
-                        <li>PK: Brandon Aubrey</li>
-                        <li>P: Bryan Anger</li>
-                        <li>H: Bryan Anger</li>
-                        <li>PR: KaVontae Turpin</li>
-                        <li>KR: KaVontae Turpin</li>
-                        <li>LS: Trent Sieg</li>
-                    </ul>
-                </details>
-                <p id="spteams-plan-text">To win the game on special teams, we must accomplish the following:</p>
-                <ol id="spteams-plan-list" style="line-height: 2.0;">
-                    <li><strong>Protect the kicker.</strong> <p>If we allow any of our kicks or punts to be blocked, we will lose the game. Plain and simple.</p></li>
-                    <li><strong>Trick plays.</strong> <p>Depending on the situation, we may elect to fake a punt on 4th down. Be ready for this call in the game.</p></li>
-                    <li><strong>Kick return TDs.</strong> <p>During kick returns, continue blocking your man until you hear a whistle. Special teams TDs will win us the game.</p></li>
-                </ol>
-            </section>
-        </div>
-
-        <div class="team-captains-section">
-            <section>
-                <h3><a id="team-captains">Team Captains</a></h3>
-                <ol id="teamcaps-list" style="line-height: 2.0;">
-                    <li>Dak Prescott</li>
-                    <li>CeeDee Lamb</li>
-                    <li>Micah Parsons</li>
-                </ol>
-                <p id="trash-talk-text"><strong>Let's send those trash Packers to Cancún! <em>We dem boys!</em></strong></p>
-            </section>
-        </div>
-        <br>
     </main>
 
     <footer>
-        <h3>Test Form</h3>
-        <form id="form-container">
-            <fieldset id="fieldset-container">
-                <p><label id="rad-lbl" for="rad-wr1">Select the best wide receiver out of the following list:</label></p>
-                <input type="radio" id="rad-wr1" name="receiver" value="CeeDee Lamb">
-                <label for="rad-wr1">CeeDee Lamb</label><br>
-                <input type="radio" id="rad-wr2" name="receiver" value="Tyreek Hill">
-                <label for="rad-wr2">Tyreek Hill</label><br>
-                <input type="radio" id="rad-wr3" name="receiver" value="AJ Brown">
-                <label for="rad-wr3">AJ Brown</label><br>
-                <input type="radio" id="rad-wr4" name="receiver" value="Justin Jefferson">
-                <label for="rad-wr4">Justin Jefferson</label><br>
-                <input type="radio" id="rad-wr5" name="receiver" value="Ja'Marr Chase">
-                <label for="rad-wr5">Ja'Marr Chase</label><br><br>
+        <div class="form-container">
+            <h3>Test Form</h3>
+            <form id="test-frm">
+                <fieldset id="fieldset-container">
+                    <p><label id="rad-lbl" for="rad-wr1">Select the best wide receiver out of the following list:</label></p>
+                    <input type="radio" id="rad-wr1" name="receiver" value="CeeDee Lamb">
+                    <label for="rad-wr1">CeeDee Lamb</label><br>
+                    <input type="radio" id="rad-wr2" name="receiver" value="Tyreek Hill">
+                    <label for="rad-wr2">Tyreek Hill</label><br>
+                    <input type="radio" id="rad-wr3" name="receiver" value="AJ Brown">
+                    <label for="rad-wr3">AJ Brown</label><br>
+                    <input type="radio" id="rad-wr4" name="receiver" value="Justin Jefferson">
+                    <label for="rad-wr4">Justin Jefferson</label><br>
+                    <input type="radio" id="rad-wr5" name="receiver" value="Ja'Marr Chase">
+                    <label for="rad-wr5">Ja'Marr Chase</label><br><br>
 
-                <p><label id="chk-lbl" for="chk-wr1">Choose three wide receivers you'd want on your team:</label></p>
-                <input type="checkbox" id="chk-wr1" name="receiver" value="CeeDee Lamb">
-                <label for="chk-wr1">CeeDee Lamb</label><br>
-                <input type="checkbox" id="chk-wr2" name="receiver" value="Tyreek Hill">
-                <label for="chk-wr2">Tyreek Hill</label><br>
-                <input type="checkbox" id="chk-wr3" name="receiver" value="AJ Brown">
-                <label for="chk-wr3">AJ Brown</label><br>
-                <input type="checkbox" id="chk-wr4" name="receiver" value="Justin Jefferson">
-                <label for="chk-wr4">Justin Jefferson</label><br>
-                <input type="checkbox" id="chk-wr5" name="receiver" value="Ja'Marr Chase">
-                <label for="chk-wr5">Ja'Marr Chase</label><br><br>
+                    <p><label id="chk-lbl" for="chk-wr1">Choose three wide receivers you'd want on your team:</label></p>
+                    <input type="checkbox" id="chk-wr1" name="receiver" value="CeeDee Lamb">
+                    <label for="chk-wr1">CeeDee Lamb</label><br>
+                    <input type="checkbox" id="chk-wr2" name="receiver" value="Tyreek Hill">
+                    <label for="chk-wr2">Tyreek Hill</label><br>
+                    <input type="checkbox" id="chk-wr3" name="receiver" value="AJ Brown">
+                    <label for="chk-wr3">AJ Brown</label><br>
+                    <input type="checkbox" id="chk-wr4" name="receiver" value="Justin Jefferson">
+                    <label for="chk-wr4">Justin Jefferson</label><br>
+                    <input type="checkbox" id="chk-wr5" name="receiver" value="Ja'Marr Chase">
+                    <label for="chk-wr5">Ja'Marr Chase</label><br><br>
 
-                <p><label id="txt-lbl" for="txt-wr">Write one additional wide receiver you'd want on your team:</label></p>
-                <input type="text" id="txt-wr" name="receiver"><br><br>
+                    <p><label id="txt-lbl" for="txt-wr">Write one additional wide receiver you'd want on your team:</label></p>
+                    <input type="text" id="txt-wr" name="receiver"><br><br>
 
-                <p><label id="list-lbl" for="o-position">What is the most important position on offense?</label></p>
-                <input list="off-pos" name="o-position" id="o-position">
+                    <p><label id="list-lbl" for="o-position">What is the most important position on offense?</label></p>
+                    <input list="off-pos" name="o-position" id="o-position">
 
-                <datalist id="off-pos">
-                    <option value="QB">
-                    <option value="RB">
-                    <option value="WR">
-                    <option value="TE">
-                    <option value="Oline">
-                </datalist><br><br>
+                    <datalist id="off-pos">
+                        <option value="QB">
+                        <option value="RB">
+                        <option value="WR">
+                        <option value="TE">
+                        <option value="Oline">
+                    </datalist><br><br>
 
-                <p><label id="sel-lbl" for="def-pos">What is the most important position on defense?</label></p>
-                <select id="def-pos">
-                    <option value="LB">LB</option>
-                    <option value="SS">SS</option>
-                    <option value="FS">FS</option>
-                    <option value="CB">CB</option>
-                    <option value="Dline">Dline</option>
-                </select><br><br>
+                    <p><label id="sel-lbl" for="def-pos">What is the most important position on defense?</label></p>
+                    <select id="def-pos">
+                        <option value="LB">LB</option>
+                        <option value="SS">SS</option>
+                        <option value="FS">FS</option>
+                        <option value="CB">CB</option>
+                        <option value="Dline">Dline</option>
+                    </select><br><br>
 
-                <p><label id="txtar-lbl" for="team-response">Write your favorite NFL team below:</label></p>
-                <textarea id="team-response" rows="3" cols="20"></textarea>
-                <br><br>
+                    <p><label id="txtar-lbl" for="team-response">Write your favorite NFL team below:</label></p>
+                    <textarea id="team-response" rows="3" cols="20"></textarea>
+                    <br><br>
 
-                <p><label id="date-lbl" for="today-date">Input today's date:</label></p>
-                <input type="date" id="today-date"><br><br>
+                    <p><label id="date-lbl" for="today-date">Input today's date:</label></p>
+                    <input type="date" id="today-date"><br><br>
 
-                <button id="btn-lbl" type="button">Submit Answers</button>
-            </fieldset>
-        </form>
+                    <button id="btn-lbl" type="button">Submit Answers</button>
+                </fieldset>
+            </form>
+        </div>
     </footer>
 </body>
 </html>

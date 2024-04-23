@@ -54,12 +54,23 @@ h3{
     justify-content: center;
 }
 
-/* coaching container styling */
-.coaching-section{
-    float: left;
+/* main top row styling */
+.main-top-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* main top row container styling */
+.coaching-section,
+.detail-section,
+.team-captains-section{
     border-style: solid;
     border-radius: 10px;
-    width: 48%;
+    width: fit-content;
+    height: fit-content;
     padding-left: 15px; padding-right: 15px;
     padding-top: 0px; padding-bottom: 10px;
     margin: auto;
@@ -68,75 +79,55 @@ h3{
 
 #mike-image{
     border-style: solid;
-    width: 425px;
+    max-width: 100%;
+    height: auto;
 }
 
-/* detail container styling */
-.detail-section{
-    float: right;
+#dak-image{
     border-style: solid;
-    border-radius: 10px;
-    width: 48%;
-    padding-left: 15px; padding-right: 15px;
-    padding-top: 0px; padding-bottom: 10px;
-    margin: auto;
-    
+    max-width: 100%;
+    height: auto;
 }
 
-/* offense container styling */
-.offense-section{
-    float: left;
+#video-container{
     border-style: solid;
-    border-radius: 10px;
-    width: 48%;
-    padding-left: 15px; padding-right: 15px;
-    padding-top: 0px; padding-bottom: 10px;
-    margin-left: 10px; margin-right: 10px;
-    margin-top: 10px; margin-bottom: 0px;
-    
+    max-width: 100%;
+    height: auto;
 }
 
-/* defense container styling */
-.defense-section{
-    float: right;
-    border-style: solid;
-    border-radius: 10px;
-    width: 48%;
-    padding: 0px 15px 10px 15px;        /* margin shorthand: <top> <right> <bottom> <left> */
-    margin: 10px 10px 0px 10px;         /* padding shorthand: <top> <right> <bottom> <left> */
-    
+#trash-talk-text{
+    text-align: center;
 }
 
-/* special teams container styling */
+/* main bottom row styling */
+.main-bottom-row{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* main bottom row container styling */
+.offense-section,
+.defense-section,
 .special-teams-section{
-    float: left;
     border-style: solid;
     border-radius: 10px;
-    width: 48%;
-    padding-left: 15px; padding-right: 15px;
-    padding-top: 0px; padding-bottom: 10px;
-    margin-left: 10px; margin-right: 10px;
-    margin-top: 10px; margin-bottom: 0px;
-    
-}
-
-/* team captains container styling */
-.team-captains-section{
-    float: right;
-    border-style: solid;
-    border-radius: 10px;
-    width: 48%;
+    width: fit-content;
+    max-width: 20%;
+    height: fit-content;
+    max-height: 100%;
     padding: 0px 15px 10px 15px;        /* margin shorthand: <top> <right> <bottom> <left> */
-    margin: 10px 10px 0px 10px;         /* padding shorthand: <top> <right> <bottom> <left> */
+    margin: 10px 40px 10px 40px;         /* padding shorthand: <top> <right> <bottom> <left> */
     
 }
 
-/* footer styling */
-footer{
-    float: left;
+/* form container styling */
+.form-container{
     border-style: solid;
     border-radius: 10px;
-    width: 48%;
+    width: fit-content;
     padding-left: 15px; padding-right: 15px;
     padding-top: 0px; padding-bottom: 10px;
     margin-left: 10px; margin-right: 10px;
