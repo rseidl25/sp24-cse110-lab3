@@ -3,17 +3,46 @@ body{
     background-color: #083061;
 }
 
+#star-img-left{
+    position: absolute;
+    top: 1em;
+    left: 20vw;
+    width: 5%;
+    height: auto;
+}
+
+#star-img-mid{
+    position: absolute;
+    top: 1em;
+    left: 45vw;
+    width: 5%;
+    height: auto;
+}
+
+#star-img-right{
+    position: absolute;
+    top: 1rem;
+    left: 74vw;
+    width: 5%;
+    height: auto;
+}
+
+
 /* header styling */
 .header-container {
     border-style: double;
     border-color: white;
-    border-width: 10px;
+    border-width: 10pt;
     background-color: #939ca2;
-    border-radius: 20px;
+    border-radius: 1pc;
 
-    min-width: 30px;
-    padding-top: 3vh;
-    margin: 5vh 20vw 5vh 20vw;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0.25in; padding-right: 0.25in;
+    padding-top: 3vh; padding-bottom: 10px;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -23,8 +52,8 @@ body{
 
 #promo-image{
     position: relative;
-    top: 1vh; left: 11.5vw;
-    width: 60%;
+    top: 1vh; left: 3vw;
+    width: 80%;
     height: auto;
     border-style: solid;
     border-color: color(display-p3 100 48 97);
@@ -34,12 +63,14 @@ body{
 #details-list{
     display: flex;
     justify-content: center;
+    position: relative;
+    left: -1%;
 }
 
 #details-list-entry{
     display: block;
     padding: 3vh;
-    font-size: 20px;
+    font-size: 2vh;
     justify-content: center;
 }
 
@@ -51,7 +82,7 @@ h1:has(+ h2) {
     display: flex;
     justify-content: center;
     color: var(--cowboys-blue, rgba(8, 48, 97, 100));
-    font-size: 45px;
+    font-size: 5vh;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -61,7 +92,7 @@ h2{
     display: flex;
     justify-content: center;
     color: color-mix(in srgb, rgb(8, 48, 97) 5%, white 90%);
-    font-size: 30px;
+    font-size: 3.5vh;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -147,7 +178,7 @@ a[href]{
 
     width: fit-content;
     height: fit-content;
-    padding-left: 15px; padding-right: 15px;
+    padding-left: 0.25in; padding-right: 0.25in;
     padding-top: 0px; padding-bottom: 10px;
     margin: auto;
 
@@ -257,10 +288,11 @@ ul#spteams-roster-container{
 }
 
 /* Add media queries for different screen sizes */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     /* Adjust header container */
     .header-container {
-        margin: 5vh 5vw;
+        margin: auto;
+        margin-top: 8vh;
     }
 
     /* Adjust agenda container */
