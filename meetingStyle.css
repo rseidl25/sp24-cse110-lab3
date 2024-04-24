@@ -3,6 +3,7 @@ body{
     background-color: #083061;
 }
 
+ /* place star image in absolute position on top left of page */
 #star-img-left{
     position: absolute;
     top: 1em;
@@ -11,6 +12,7 @@ body{
     height: auto;
 }
 
+ /* place star image in absolute position on top middle of page */
 #star-img-mid{
     position: absolute;
     top: 1em;
@@ -19,6 +21,7 @@ body{
     height: auto;
 }
 
+ /* place star image in absolute position on top right of page */
 #star-img-right{
     position: absolute;
     top: 1rem;
@@ -30,17 +33,17 @@ body{
 
 /* header styling */
 .header-container {
-    border-style: double;
+    border-style: double;                           /* white double border, grey background */
     border-color: white;
     border-width: 10pt;
     background-color: #939ca2;
     border-radius: 1pc;
 
-    width: fit-content;
+    width: fit-content;                             /* set width and height to fit content inside container */
     height: fit-content;
     padding-left: 0.25in; padding-right: 0.25in;
     padding-top: 3vh; padding-bottom: 10px;
-    margin: auto;
+    margin: auto;                                   /* auto margins with slight tweaks to top and bottom margin */
     margin-top: 15vh;
     margin-bottom: 5vh;
 
@@ -50,16 +53,18 @@ body{
     letter-spacing: 1px;
 }
 
+/* image in header container styling */
 #promo-image{
-    position: relative;
+    position: relative;                             /* position image relative to container */
     top: 1vh; left: 3vw;
-    width: 80%;
+    width: 80%;                                     /* image size scales with container size */
     height: auto;
-    border-style: solid;
+    border-style: solid;                            /* white solid border */
     border-color: color(display-p3 100 48 97);
     border-radius: 10px;
 }
 
+/* position meeting details text list beneath promo image */
 #details-list{
     display: flex;
     justify-content: center;
@@ -67,6 +72,7 @@ body{
     left: -1%;
 }
 
+/* display detail items in a block format */
 #details-list-entry{
     display: block;
     padding: 3vh;
@@ -74,10 +80,12 @@ body{
     justify-content: center;
 }
 
+/* style the color of h1 */
 h1{
     --cowboys-blue: #083061;
 }
 
+/* style the position and font properties of h1 before h2 */
 h1:has(+ h2) {
     display: flex;
     justify-content: center;
@@ -88,6 +96,7 @@ h1:has(+ h2) {
     font-style: normal;
 }
 
+/* style the position and font properties of h2 */
 h2{
     display: flex;
     justify-content: center;
@@ -99,6 +108,7 @@ h2{
     text-decoration: underline overline hsl(226, 73%, 29%);
 }
 
+/* style the position and font properties of h3 */
 h3{
     display: flex;
     justify-content: center;
@@ -110,28 +120,30 @@ h3{
 
 /* agenda styling */
 .agenda-container{
-    border-style: solid;
+    border-style: solid;                        /* white solid border, grey background */
     border-color: white;
     border-width: 5px;
     border-radius: 50px;
     background-color: #939ca2;
 
-    padding-top: 4vh; padding-bottom: 4vh;
+    padding-top: 4vh; padding-bottom: 4vh;      /* manually set padding and margin of agenda container */
     margin-left: 20vw; margin-right: 20vw;
     margin-bottom: 5vh;
 
-    text-align: center;
+    text-align: center;                         /* style font properties of agenda text */
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
 }
 
+/* change display style of every agenda entry */
 *#agenda-list-entry{
     display: inline;
     padding: 4px;
 }
 
+/* style the link, hover, and onClick color of agenda links */
 a[href]{
 
     color:#083061;
@@ -146,6 +158,7 @@ a[href]{
     
 }
 
+/* style the position and font properties of agenda text */
 #agenda-text{
     display: flex;
     justify-content: center;
@@ -159,8 +172,8 @@ a[href]{
 
 /* main top row styling */
 .main-top-row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;                                                      /* grid for first 3 agenda items */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));        /* cell sizes determined automatically */
     align-items: flex-start;
     justify-content: space-around;
     margin-bottom: 30px;
@@ -170,50 +183,54 @@ a[href]{
 .coaching-section,
 .detail-section,
 .team-captains-section{
-    border-style: double;
+    border-style: double;                                   /* white double border, grey background */
     border-color: white;
     border-width: 10px;
     border-radius: 20px;
     background-color: #939ca2;
 
-    width: fit-content;
+    width: fit-content;                                     /* set width and height to automatically fit content */
     height: fit-content;
     padding-left: 0.25in; padding-right: 0.25in;
     padding-top: 0px; padding-bottom: 10px;
-    margin: auto;
+    margin: auto;                                           /* automatically set margin */
 
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", sans-serif;                  /* font properties for text within containers */
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     
 }
 
+/* image in coaching section styling */
 #mike-image{
     border-style: solid;
     max-width: 100%;
     height: auto;
 }
 
+/* image in captains section styling */
 #dak-image{
     border-style: solid;
     max-width: 100%;
     height: auto;
 }
 
+/* video in details section styling */
 #video-container{
     border-style: solid;
     max-width: 100%;
     height: auto;
 }
 
+/* align text at bottom of captains section */
 #trash-talk-text{
     text-align: center;
 }
 
 /* main bottom row styling */
 .main-bottom-row{
-    display: flex;
+    display: flex;                              /* flexbox with rows that wrap */
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -224,20 +241,20 @@ a[href]{
 .offense-section,
 .defense-section,
 .special-teams-section{
-    border-style: double;
+    border-style: double;                       /* white double border, grey background */
     border-color: white;
     border-radius: 20px;
     border-width: 10px;
     background-color: #939ca2;
 
-    width: fit-content;
+    width: fit-content;                         /* set width and height to automatically fit content */
     max-width: 20%;
     height: fit-content;
     max-height: 100%;
-    padding: 0px 15px 10px 15px;        /* margin shorthand: <top> <right> <bottom> <left> */
-    margin: 10px 40px 10px 40px;         /* padding shorthand: <top> <right> <bottom> <left> */
+    padding: 0px 15px 10px 15px;                /* margin shorthand: <top> <right> <bottom> <left> */
+    margin: 10px 40px 10px 40px;                /* padding shorthand: <top> <right> <bottom> <left> */
     
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", sans-serif;      /* font properties for text within containers */
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
@@ -246,41 +263,46 @@ a[href]{
 
 /* form container styling */
 .form-container{
-    border-style: solid;
+    border-style: solid;                        /* white double border, grey background */
     border-color: white;
     border-width: 10px;
     border-radius: 20px;
     background-color: #939ca2;
 
-    width: fit-content;
-    padding-left: 15px; padding-right: 15px;
+    width: fit-content;                         /* set width to automatically fit content */
+    padding-left: 15px; padding-right: 15px;    /* manually adjust padding of form container */
     padding-top: 0px; padding-bottom: 10px;
     margin-left: 10px; margin-right: 10px;
     margin-top: 10px; margin-bottom: 0px;
     
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", sans-serif;      /* font properties for text within form container */
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     
 }
 
+/* set color of <p> elements in form container */
 .form-container p{
     color: #083061;
 }
 
+/* set background color of <form> element children of form container */
 .form-container > form{
     background-color: aliceblue;
 }
 
+/* set color of <p> elements after <details> elements */
 details + p{
     color:red;
 }
 
+/* underline <p> elements that follow <h3> elements */
 h3 ~ p{
     text-decoration: underline;
 }
 
+/* set color of text within various ul containers with specified id */
 ul#offense-roster-container,
 ul#defense-roster-container,
 ul#spteams-roster-container{
